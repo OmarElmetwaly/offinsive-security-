@@ -1,22 +1,59 @@
-# offinsive-security-
-Cybersecurity &amp; AI Security Enthusiast  - Threat Intelligence - Web Application Security (OWASP Top 10) - AI Security Evaluation - MITRE ATT&amp;CK Analysis
-# OmarElmetwaly: Workshop: Offensive AI In Practice: Hands on Exploitation of Vulnerable Applications Using Open Source AI Tools
-## April 2026
+# Offensive Security & AI Security Lab
 
-## Directory Map
+This repository documents my hands-on work in offensive security and AI-assisted penetration testing.
 
-After setup is complete, your project should look like this:
+## Focus Areas
+- Web Application Security (OWASP Top 10)
+- Threat Intelligence & Attack Chain Analysis
+- AI-Assisted Security Testing
+- MITRE ATT&CK Mapping
 
-```
-sans-ai-workshop-april-2026/
-├── README.md                          <-- You are here
-└── workshop-bundle/
-    ├── .env                           <-- Your API keys (copy from .env.example)
-    ├── .env.example
-    ├── docker-compose.yml             <-- Defines all services (run from here)
-    │
-    ├── tools/                         <-- Cloned tool repositories go here
-    │   ├── shannon/                   <-- git clone https://github.com/KeygraphHQ/shannon
+---
+
+## Project: Juice Shop Security Testing
+
+### Objective
+Simulate real-world penetration testing using AI-assisted tools against a vulnerable application.
+
+### Tools Used
+- OWASP Juice Shop
+- PentestGPT
+- ZAP
+- Shannon AI
+
+---
+
+## Key Findings
+
+### 1. Authentication Weakness
+- Observed weak authentication handling
+- Potential for SQL injection-based bypass
+
+### 2. Access Control Issues
+- Insecure direct object references (IDOR)
+- Lack of proper authorization checks
+
+---
+
+## Threat Analysis
+
+- Initial Access: Web application vulnerability
+- Technique Mapping: MITRE ATT&CK (e.g., T1190 – Exploit Public-Facing Application)
+- Risk: High impact if exploited in production systems
+
+---
+
+## AI Evaluation
+
+AI tools provided useful guidance but:
+- Sometimes generated unrealistic attack assumptions
+- Required manual validation
+
+---
+
+## Conclusion
+
+This project demonstrates how AI can assist in penetration testing, but human validation remains critical for accurate security assessments.    │   ├── shannon/                   <-- git clone https://github.com/KeygraphHQ/shannon
     │   │   ├── Dockerfile             <-- Must exist (used by docker compose build)
     │   │   ├── apps/                  <-- Shannon source code
     │   │   ├── configs/               <-- Pentest config files (e.g., juice-shop.yaml)
